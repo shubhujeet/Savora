@@ -1,0 +1,118 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Salsa&family=Signika:wght@600&family=Tilt+Neon&display=swap');
+/* 
+font-family: 'Nova Round', system-ui;
+font-family: 'Salsa', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+/* 
+font-family: 'Play', sans-serif;
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* 
+font-family: 'Ubuntu', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@300&family=Open+Sans&display=swap');
+/* 
+font-family: 'Nunito', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+
+.sub1 {
+    width: 7vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+
+.sub2 {
+    width: calc(100vw - 7vw);
+    height: 100%;
+    background: #c5f6ff;
+    border-radius: 20px;
+    padding-left: 40px;
+    /* overflow: scroll;
+    overflow-x: hidden; */
+}
+
+.sub1 a {
+    text-decoration: none;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  border-radius: 30pc;
+  background: #fc2125;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 8px 0px #627986;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: #e7090c;
+  font-size: 22px;
+}
+
+.profile,
+.upload,
+.login,
+.myplan {
+  display: none;
+}
+
+.logout{
+  display: none;
+  margin-top: 50px;
+}
+ 
+/* Scrollbar settings */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #cacaca; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff3030; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }

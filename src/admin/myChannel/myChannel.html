@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savora-My-Channel</title>
+    <link rel="shortcut icon" href="../../../assets/icons/Savora2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./myChannel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sub1">
+        <a href="../profile/profile.html" class="profile" id="profile">
+          <div class="btn" id="profileElement">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+        </a>
+        <a href="../admin/report.html" class="report" id="report">
+          <div class="btn"><i class="fa-solid fa-flag"></i></div>
+        </a>
+        <a href="../dash/dash.html">
+          <div class="btn"><i class="ri-dashboard-3-fill"></i></div>
+        </a>
+
+        <a href="../Home/home.html">
+          <div class="btn"><i class="fa-solid fa-house-chimney"></i></div>
+        </a>
+        <a href="../shorts/shorts.html">
+          <div class="btn"><i class="fa-regular fa-circle-play"></i></div>
+        </a>
+        <a href="#" class="upload" id="upload">
+          <div class="btn"><i class="fa-brands fa-playstation"></i></div>
+        </a>
+        <!-- <a href="../classroom/classroom.html">
+          <div class="btn"><i class="fa-solid fa-users-rectangle"></i></div>
+        </a> -->
+        <a href="../myPlan/myPlan.html" class="myPlan" id="myPlan">
+          <div class="btn"><i class="fa-brands fa-product-hunt"></i></div>
+        </a>
+
+        <a href="../../login/login.html" class="login" id="login">
+          <div class="btn"><i class="ri-login-circle-fill"></i></div>
+        </a>
+
+        <a href="#" class="logout" id="logout">
+          <div class="btn"><i class="ri-logout-circle-fill"></i></div>
+        </a>
+      </div>
+      <div class="sub2">
+        <div class="divTitle">
+          <b class="title">My-Channel</b>
+        </div>
+
+        <div class="sub2Con2">
+          <div class="uploadVideoCon">
+            <div class="uploadImgCon">
+              <img
+                src="../../../assets/images/uploadVideo.png"
+                alt="upload Image"
+              />
+            </div>
+            <div class="uploadBtn">
+              <i class="ri-video-upload-fill"></i><b>Upload Video</b>
+            </div>
+          </div>
+
+          <div class="myUploadedVideoCon">
+            <div class="myUploadTitle">
+              <b>My Uploads</b>
+            </div>
+
+            <div class="myUploads">
+              <!-- <div class="myUploadedFileNameCon" id="myUploadedFileNameCon">
+                <em class="myUploadedFileName" id="myUploadedFileName">Filename</em>
+                <div class="myUploadDelete" id="myUploadDelete"><i class="ri-delete-bin-5-line"></i></div>
+              </div> -->
+            
+            </div>
+          </div>
+
+          <template data-myUpload-template>
+            <div class="myUploadedFileNameCon" id="myUploadedFileNameCon">
+              <em class="myUploadedFileName" id="myUploadedFileName"></em>
+              <div class="myUploadDelete" id="myUploadDelete"><i class="ri-delete-bin-5-line"></i></div>
+            </div>
+          </template>
+
+          <div class="view">
+            <div class="viewDiv1">
+              <h2 class="header">Upload Recipe</h2>
+              <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="viewDiv2">
+              <div class="index">
+                <div class="viewIng1">Details</div>
+
+                <!-- <div class="viewIng2">Ingredients</div>
+                      <div class="viewIng3">Ingredients</div> -->
+              </div>
+              <div class="pages">
+                <div class="page1">
+                  <!-- <div class="downloadViewIng"><i class="fa-solid fa-download"></i></div> -->
+                  <form class="viewContent" method="post">
+                    <div class="myVideo">
+                      <label class="videoL">Video:</label>
+                      <!-- <div class="uploadVideoBtn">Attach Video</div>                                     -->
+                      <input
+                        type="file"
+                        id="uploadVideoFile"
+                        class="uploadVideoFile"
+                        accept="video/*"
+                        required
+                      />
+                    </div>
+
+                    <div class="recipeNmCon">
+                      <label class="recipeNL" for="recipeNm"
+                        >Recipe Name:</label
+                      >
+                      <input
+                        type="text"
+                        spellcheck="true"
+                        class="recipeNm"
+                        id="recipeNm"
+                        name="recipeNm"
+                        placeholder="Biryani"
+                        required
+                      />
+                    </div>
+
+                    <div class="ingredientInpCon">
+                      <label class="ingredientInpL" for="ingredientInp"
+                        >Ingredients:</label
+                      >
+                      <textarea
+                        name="ingredientInp"
+                        class="ingredientInp"
+                        id="ingredientInp"
+                        spellcheck="true"
+                        cols="50"
+                        rows="8"
+                        placeholder="lemon, salt ...."
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="recipeStepsCon">
+                      <label class="recipeStepInpL" for="recipeStepsInp"
+                        >Recipe Steps:</label
+                      >
+                      <textarea
+                        name="recipeStepsInp"
+                        class="recipeStepsInp"
+                        id="recipeStepsInp"
+                        spellcheck="true"
+                        cols="50"
+                        rows="8"
+                        placeholder="lemon, salt ...."
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="progress-container">
+                      <div class="progress-bar"></div>
+                      <span class="progress-text">0%</span>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="uploadRecipeBtn"
+                      id="uploadRecipeBtn"
+                    >
+                      Upload
+                    </button>
+                  </form>
+                </div>
+                <div class="page2">
+                  <div class="downloadViewIng">
+                    <i class="fa-solid fa-download"></i>
+                  </div>
+                  <p>PAGE 2</p>
+                </div>
+                <div class="page3">
+                  <div class="downloadViewIng">
+                    <i class="fa-solid fa-download"></i>
+                  </div>
+                  <p>page 3</p>
+                </div>
+              </div>
+            </div>
+            <div class="viewDiv3">
+              <!-- <button class="close">Close</button> -->
+              <!-- <button class="saveView">Upload</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./myChannel.js"></script>
+  </body>
+</html>

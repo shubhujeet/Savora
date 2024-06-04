@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savora-Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/icons/Savora2.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sub1">
+        <a href="../profile/profile.html" class="profile" id="profile">
+          <div class="btn" id="profileElement">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="btn"><i class="ri-dashboard-3-fill"></i></div>
+        </a>
+
+        <a href="../Home/home.html">
+          <div class="btn"><i class="fa-solid fa-house-chimney"></i></div>
+        </a>
+        <a href="../shorts/shorts.html">
+          <div class="btn"><i class="fa-regular fa-circle-play"></i></div>
+        </a>
+        <!-- <a href="../classroom/classroom.html">
+          <div class="btn"><i class="fa-solid fa-users-rectangle"></i></div>
+        </a> -->
+        <a href="../myChannel/myChannel.html" class="upload" id="upload">
+          <div class="btn"><i class="fa-brands fa-playstation"></i></div>
+        </a>
+        <a href="../myPlan/myPlan.html" class="myPlan" id="myPlan">
+          <div class="btn"><i class="fa-brands fa-product-hunt"></i></div>
+        </a>
+
+        <a href="../login/login.html" class="login" id="login">
+          <div class="btn"><i class="ri-login-circle-fill"></i></div>
+        </a>
+
+        <a href="#" class="logout" id="logout">
+          <div class="btn"><i class="ri-logout-circle-fill"></i></div>
+        </a>
+      </div>
+      <div class="sub2">
+        <div class="con1">
+          <div class="welcomeTitle">
+            <img class="welcomeImg" src="../../assets/icons/hi.png" alt="Hi" />
+            <span class="welcomeText">
+              Welcome To <span class="savora"> Savora, </span>
+              Lets begin !!
+            </span>
+          </div>
+
+          <a href="../myPlan/myPlan.html" class="addBtn">My Plans</a>
+        </div>
+        <div class="con2">
+          <div class="subCon1">
+            <em>What do you eat today?</em>
+            <b>Ready to cook!</b>
+            <a href="../Home/home.html" class="readBtn">Lets Explore</a>
+          </div>
+          <div class="subCon2">
+            <img src="../../assets/images/kheer.png" alt="kheer" id="kheer" />
+            <img src="../../assets/images/burger.png" alt="burger" id="burger" />
+            <img src="../../assets/images/fruits.png" alt="fruits" id="fruits" />
+            <img src="../../assets/images/ginger.png" alt="ginger" id="kadha" />
+          </div>
+        </div>
+        <div class="con3">
+          <b class="title">Favourite Food Category</b>
+          <div class="subCon3">
+            <div class="ele">
+              <a href="#Italian">
+                <div class="type">
+                  <img src="../../assets/icons/pizza.png" alt="" />
+                </div>
+                <b>Italian</b>
+              </a>
+            </div>
+            <div class="ele">
+              <a href="#Mexican">
+                <div class="type">
+                  <img src="../../assets/icons/taco (1).png" alt="" />
+                </div>
+                <b>Mexican</b>
+              </a>
+            </div>
+            <div class="ele">
+              <a href="#American">
+                <div class="type">
+                  <img src="../../assets/icons/french-fries.png" alt="" />
+                </div>
+                <b>American</b>
+              </a>
+            </div>
+            <div class="ele">
+              <a href="#Indian">
+                <div class="type">
+                  <img src="../../assets/icons/food.png" alt="" />
+                </div>
+                <b>Indian</b>
+              </a>
+            </div>
+            <div class="ele">
+              <a href="#Japanese">
+                <div class="type">
+                  <img src="../../assets/icons/bento.png" alt="" />
+                </div>
+                <b>Japanese</b>
+              </a>
+            </div>
+            <div class="ele">
+              <a href="#Chinese">
+                <div class="type">
+                  <img src="../../assets/icons/ramen (1).png" alt="" />
+                </div>
+                <b>Chinese</b>
+              </a>
+            </div>
+            <div class="ele">
+              <a href="#Korean">
+                <div class="type">
+                  <img src="../../assets/icons/kimchi.png" alt="" />
+                </div>
+                <b>Korean</b>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="con4" id="Italian">
+          <b class="title">Italian</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img
+                class="recipeImg"
+                src=""
+                alt=""
+              />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Tomato-pasta</b>
+                <p>Pasta, tomato, garglic, olive oil, etc..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/pizza.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Pizza</b>
+                <p>Dough, Tomato sauce, Mozzarella,..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/tortellini.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Tortellini</b>
+                <p>Pasta dough, Cheese,Pepper, Flour..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/tiramisu.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Tiramisu</b>
+                <p>Espresso,Eggs, Sugar, Cocoa powder..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="con4" id="Mexican">
+          <b class="title">Mexican</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/taco.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Taco</b>
+                <p>Cumin, paprika, garlic powder, onion powder..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/burrito.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Burrito</b>
+                <p>Tortilla,Cooked rice, Cheese,Lettuce..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/pozole-de-pollo.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Posole-De-Pollo</b>
+                <p>Onion, Garlic, oregano,cumin..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/menudo.png" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Menudo</b>
+                <p>Onion, Garlic, Dried oregano, Bay leaves..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="con4" id="American">
+          <b class="title">American</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/french-fries.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>French Fries</b>
+                <p>Potatoes, Vegetable oil, Salt..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/pancake.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Pancake</b>
+                <p>All-purpose flour, Baking powder, Salt ..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/french-toast.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>French Toast</b>
+                <p>Bread, Eggs, Milk, Vanilla extract ..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/cinnamon-rolls.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Cinnamon Roll</b>
+                <p>All-purpose flour, Yeast, Milk ..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="con4" id="Indian">
+          <b class="title">Indian</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img
+                class="recipeImg"
+                src="../../assets/images/samosa.jpg"
+                alt=""
+              />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Samosa</b>
+                <p>All-purpose flour, Water, Salt, oil..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img
+                class="recipeImg"
+                src="../../assets/images/pakora.jpg"
+                alt=""
+              />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Pakaude</b>
+                <p>Vegetables, Chickpea flour, Rice flour..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/idli.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Idli</b>
+                <p>Rice,Urad dal, Salt, Water</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/rasgulla.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Rasgulla</b>
+                <p>Milk, Lemon juice or vinegar, Sugar, Water..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="con4" id="Japanese">
+          <b class="title">Japanese</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/sushi.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Sushi</b>
+                <p>Sushi rice, Nori,Rice vinegar, Sugar, Salt..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/tofu.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Tofu</b>
+                <p>Soybeans, Water, Coagulant, salt</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/miso-soup.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Miso Soup</b>
+                <p>Dashi, Miso paste, Tofu, Wakame, Green onions</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/onigiri.png" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Onigiri</b>
+                <p>Cooked sushi rice, Nori, salad, ..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="con4" id="Chinese">
+          <b class="title">Chinese</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/fried-rice.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Fried Rice</b>
+                <p>Cooked rice, Vegetables, Eggs, Soy sauce..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/chow-mein.png" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Chow Mein</b>
+                <p>Noodles, Vegetables, Soy sauce, Garlic..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/spring-roll.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Spring Roll</b>
+                <p>Shredded cabbage, Shredded carrots, Bean..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/dumpling.png" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Dumpling</b>
+                <p>All-purpose flour, Water, Salt, vegetables..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="con4" id="Korean">
+          <b class="title">Korean</b>
+          <!-- <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/kimchi.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Kimchi</b>
+                <p>Napa cabbage, Korean radish, Garlic..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/kimbap.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Kimbap</b>
+                <p>Sushi rice, Nori, Sesame oil, Sesame seeds..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/stew.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Stew</b>
+                <p>Vegetables, Tomato paste, Salt, Pepper..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img src="../../assets/images/bibimbap.jpg" alt="" />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b>Bibimbap</b>
+                <p>Rice, Eggs, Gochujang, Sesame oil, Garlic ..</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <template data-recipe-card>
+          <div class="recipeCard">
+            <div class="imgCon">
+              <img
+                id="recipeImg"
+                src="../../assets/images/tomato-pasta.jpg"
+                alt=""
+              />
+            </div>
+            <div class="cardDetailCon">
+              <div class="cardDetail">
+                <b id="recipeName">Tomato-pasta</b>
+                <p id="recipeIng">Pasta, tomato, garglic, olive oil, etc..</p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <!-- <div class="sub3">
+
+        </div> -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.25/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollmagic@2.0.8/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+      integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+      integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"
+      integrity="sha512-VigP+/SyhNQ7m+09j8ue26TB1U76B/AnbaEkzT6R0Y+nOYR4GpwGZuL4ZfSPCuuVvpBNkVDOhy+R+38qtDEkWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+
+    <script type="module" src="./dash.js"></script>
+  </body>
+</html>

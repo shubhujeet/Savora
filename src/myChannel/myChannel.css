@@ -1,0 +1,466 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&family=Salsa&family=Signika:wght@600&family=Tilt+Neon&display=swap");
+/* 
+font-family: 'Nova Round', system-ui;
+font-family: 'Salsa', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+/* 
+font-family: 'Play', sans-serif;
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/* 
+font-family: 'Ubuntu', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@300&family=Open+Sans&display=swap");
+/* 
+font-family: 'Nunito', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sub1 {
+  width: 7vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+.sub2 {
+  width: calc(100vw - 7vw);
+  height: 100%;
+  background: #c5f6ff;
+  border-radius: 20px;
+  padding-left: 40px;
+}
+
+.sub1 a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  border-radius: 30pc;
+  background: #fc2125;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 8px 0px #627986;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: #e7090c;
+  font-size: 22px;
+}
+
+.profile,
+.upload,
+.login,
+.myplan {
+  display: none;
+}
+
+.logout {
+  display: none;
+  margin-top: 50px;
+}
+
+.sub2 .divTitle {
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 1px solid #111111;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 30px;
+  margin: 20px;
+}
+
+.sub2Con2 {
+  background: #c5f6ff;
+  border-radius: 10px;
+  width: 97%;
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* box-shadow: -1px 0px 8px 0px #1554ba; */
+}
+
+.uploadVideoCon {
+  width: 20rem;
+  height: 20rem;
+  background: #ff3030;
+  margin-top: 2rem;
+  margin-inline: 10rem;
+  border-radius: 10px;
+  box-shadow: -1px 0px 8px 0px #1554ba;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.uploadVideoCon:hover {
+  box-shadow: -1px 0px 8px 3px #1554ba;
+}
+
+.myUploadedVideoCon {
+  font-family: 'Signika', sans-serif; 
+  font-size: 20px;
+  background: #ffffff;
+  width: 30rem;
+  height: 30rem;
+  overflow: scroll;
+  margin-top: 1rem;
+  margin-right: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.myUploadTitle {
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px #747bfd solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.myUploadedFileNameCon {
+  font-size: 18px;
+  font-family: 'Tilt Neon', sans-serif;
+  margin-block:10px;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myUploadedFileNameCon:hover {
+  background: #007bff;
+  color: #ffffff;
+}
+
+
+.myUploadDelete {
+  /* background:#ff0000; */
+  /* color: #ffffff; */
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.myUploadDelete:hover {
+  color: #ff0000;
+  transform: scale(1.7);
+}
+
+.uploadImgCon {
+  width: 13rem;
+  height: 13rem;
+  overflow: hidden;
+}
+
+.uploadImgCon img {
+  width: 100%;
+  height: 100%;
+}
+
+.uploadBtn {
+  cursor: pointer;
+  width: 230px;
+  height: 40px;
+  background: #f4f418;
+  color: #ff3030;
+  padding: 5px;
+  padding-inline: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-family: "Mukta", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* color: #ffffff; */
+}
+
+.uploadBtn:hover {
+  box-shadow: -1px 0px 8px 0px #f4f418;
+}
+
+/* View */
+
+.view {
+  display: none;
+  position: absolute;
+  background: #c5f6ff;
+  border-radius: 10px;
+  width: 80vw;
+  height: 80vh;
+  font-family: "Nunito", sans-serif;
+  box-shadow: -1px -1px 20px 0px #4029f2;
+  transform: translate(2vw, 0vh);
+}
+
+.viewDiv1 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.viewDiv2 {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.viewDiv2 .index {
+  width: 30%;
+  height: 100%;
+  font-size: 20px;
+  border: 1px;
+  border-color: #4b38db;
+  border-style: solid solid solid none;
+}
+
+.index div {
+  padding: 10px;
+}
+
+.index div:hover {
+  background: #a7b4f9;
+  /* border-radius: 10px; */
+}
+
+.viewDiv2 .pages {
+  width: 70%;
+  height: 100%;
+  border: 1px;
+  right: 20px;
+  padding-left: 10px;
+  border-color: #4b38db;
+  border-style: solid none solid solid;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+.downloadViewIng {
+  position: absolute;
+  right: 20px;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: #7353b1;
+  margin: 10px;
+}
+
+.downloadViewIng:hover {
+  color: #b30000;
+}
+
+.page3,
+.page2 {
+  display: none;
+}
+
+.viewDiv3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 10%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.viewDiv3 button {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  background: #4029f2;
+}
+
+.viewDiv3 button:hover {
+  background: #1600bd;
+}
+
+.viewContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.myVideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  margin-block: 20px;
+  gap: 10px;
+}
+
+.recipeNmCon,
+.ingredientInpCon,
+.recipeStepsCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  gap: 10px;
+}
+
+.uploadVideoFile {
+  background: #1600bd;
+  font-size: 20px;
+  color: #f4f418;
+  border-radius: 5px;
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+.uploadRecipeBtn {
+  /* width: 200px; */
+  margin-block: 30px;
+  margin-inline: 200px;
+  height: 30px;
+  font-size: 20px;
+  background: #1600bd;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+}
+
+.videoL,
+.recipeNL,
+.ingredientInpL,
+.viewIng1,
+.recipeStepInpL {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.recipeNm {
+  font-size: 20px;
+  width: 400px;
+  border-radius: 5px;
+  padding-inline: 10px;
+}
+
+.ingredientInp,
+.recipeStepsInp {
+  font-size: 18px;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  background: #ff0000;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Progress bar */
+
+.progress-container {
+  /* right: 50px; */
+  bottom: 110px;
+  width: 98%;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #c5f6ff;
+  border: 1px solid #1600bd;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%; /* Fills the entire container height */
+  background-color: #007bff; /* Progress bar color */
+  border-radius: inherit; /* Inherit rounded corners from container */
+  transition: width 1s ease-in-out; /* Animation for smooth progress */
+}
+
+.progress-text {
+  line-height: 20px; /* Center text within container */
+  color: #111111;
+  float: right; /* Align text to the right */
+  margin-right: 5px; /* Add some margin from the right edge */
+}
+
+/* Scrollbar settings */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff3030;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

@@ -1,0 +1,156 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+/* 
+ font-family: 'Lobster Two', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Lobster+Two&display=swap');
+/* 
+font-family: 'Changa', sans-serif;
+font-family: 'Lobster Two', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Lobster+Two&family=Salsa&display=swap');
+/* 
+font-family: 'Salsa', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    transform: translate(10vw,6vh);
+}
+
+
+.googleSignIn {
+    margin-top: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    font-size: 14px;
+    box-shadow: 0px 0px 8px 0px #8d8d8d;
+
+}
+
+.googleSignIn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.sub1 {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    gap: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-direction: column;
+    box-shadow: -2px 2px 13px 0px #868383;
+    /* background: yellow; */
+}
+
+.sub2 {
+    width: 550px;
+    height: 550px;
+    background: green;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 13px 0px #868383;
+    overflow: hidden;
+}
+
+.sub1 em {
+    font-size: 20px;
+    color: #868383;
+}
+
+.sub1 .title {
+    font-size: 25px;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+.sub1 .fLabel {
+    font-size: 15px;
+    font-family: 'Changa', sans-serif;
+}
+
+.sub1 input {
+    border-radius: 25px;
+    border: 1px;
+    border-style: solid;
+    border-color: #868383;
+    width: 350px;
+    height: 50px;
+    padding: 8px;
+    padding-left: 20px;
+    font-family: 'Changa', sans-serif;
+}
+
+.sub1 .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub1 .buttons .register, .sub1 .buttons .login {
+    width: 120px;
+    height: 33px;
+    font-family: 'Salsa', cursive;
+    font-size: 15px;
+    background: #c0dafe;
+    border: 1px;
+    border-style: solid;
+    border-color: #1e63f7;
+    border-radius: 20px;
+    color: #000;
+}
+
+
+.sub1 .buttons .register:hover, .sub1 .buttons .login:hover {
+    color: aliceblue;
+    background: #1e63f7;
+    border: none;
+}
+
+
+.sub1 .buttons .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sub1 a {
+    text-decoration: none;
+    font-family: 'Changa', sans-serif;
+    color: #444343;
+}
+
+.sub1 a:hover {
+    color: #000;
+}
+
+.sub2 img {
+    width: 150%;
+    height: 100%;
+}
+
+.modal {
+    display: none;
+}

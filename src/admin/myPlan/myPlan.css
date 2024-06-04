@@ -1,0 +1,775 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&family=Salsa&family=Signika:wght@600&family=Tilt+Neon&display=swap");
+/* 
+font-family: 'Nova Round', system-ui;
+font-family: 'Salsa', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+/* 
+font-family: 'Play', sans-serif;
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/* 
+font-family: 'Ubuntu', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@300&family=Open+Sans&display=swap");
+/* 
+font-family: 'Nunito', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sub1 {
+  width: 7vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+.sub2 {
+  width: calc(100vw - 7vw);
+  height: 100%;
+  background: #c5f6ff;
+  border-radius: 20px;
+  padding-left: 40px;
+  /* overflow: scroll;
+    overflow-x: hidden; */
+}
+
+.sub1 a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  border-radius: 30pc;
+  background: #fc2125;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 8px 0px #627986;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: #e7090c;
+  font-size: 22px;
+}
+
+.profile,
+.upload,
+.login,
+.myplan {
+  display: none;
+}
+
+.logout{
+  margin: none;
+  margin-top: 50px;
+}
+
+
+.btn i {
+  font-size: 22px;
+}
+
+.sub2 .divTitle {
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 1px solid #111111;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 30px;
+  margin: 20px;
+}
+
+.sub2 .filters {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-inline: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.sub2 .filters .addRecipe {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sub2 .filters .addRecipe,
+.find,
+.create,
+.refresh {
+  background: #1600bd;
+  padding: 5px;
+  padding-inline: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  font-family: "Mukta", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sub2 .filters .addRecipe:hover,
+.find:hover,
+.create:hover {
+  background: #4029f2;
+}
+
+.sub2 .con {
+  background: #c5f6ff;
+  width: 100%;
+  height: 80%;
+  padding: 30px;
+  padding-left: 50px;
+  overflow-y: scroll;
+}
+
+/* Static List Css */
+
+.sub2 .con .conListS {
+  background: #ffffff;
+  /* border: 1px solid; */
+  border-radius: 10px;
+  width: 95%;
+  height: 450px;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px 0px #7463f4a3;
+}
+
+.conListS .recipeFolderS {
+  font-family: 'Signika', sans-serif;
+  padding-bottom: 10px;
+  border-bottom: 2px #747bfd solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 10px;
+}
+
+
+.conListS .downloadS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.conListS .downloadS:hover {
+  color: #1600bd;
+  cursor: pointer;
+}
+
+.conListS .deleteAllS {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.conListS .deleteAllS:hover {
+  color: #1600bd;
+}
+
+.sub2 .con .conListS .recipeTitleS {
+  font-size: 20px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.sub2 .con .conListS .elementListS {
+  width: 100%;
+  height: 400px;
+  margin-left: 10px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mySummary {
+
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 200;
+  padding-block: 10px;
+  padding-inline: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mySummary:hover {
+  background-color: #9ac4ff;
+  color: #000000;
+  border-radius: 10px;  
+}
+
+.summaryActions {
+  width: 70%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+details {
+  margin-inline: 10px;
+}
+
+
+details[open] {
+
+  background: #7353b1;
+  color: #ffffff;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 2px 1px #5842e9;
+  margin: 10px;
+  
+}
+
+.element {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 20px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0px 0px 10px 1px #a296fa;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.count {
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+  color: #f4f418;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monday {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* .mondayPlan {
+    width: 100%;
+    height: 500px;
+} */
+
+/* Custome List css */
+
+.sub2 .con .conList {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 90%;
+  height: 300px;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-block: 30px;
+}
+
+.conList .recipeFolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 10px;
+}
+
+.conList .download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.conList .download:hover {
+  color: #1600bd;
+  cursor: pointer;
+}
+
+.conList .deleteAll {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.conList .deleteAll:hover {
+  color: #1600bd;
+}
+
+.sub2 .con .conList .recipeTitle {
+  font-size: 22px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.sub2 .con .conList .elementList {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub2 .con .conList .subList {
+  margin: 10px;
+  font-size: 14px;
+  width: 100%;
+  height: 50%;
+}
+
+.subList .item {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subList .itemCon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.subList .heading {
+  font-size: 15px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.ingredient .downloadIng {
+  display: flex;
+  margin-right: 13px;
+  padding-inline: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ingredient .downloadIng:hover {
+  background-color: #4029f2;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subList .ingList {
+  color: #969c9f;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+
+.subList .itemCon .getRecipe,
+.reminder,
+.delete {
+  background: #1600bd;
+  width: 100px;
+  height: 20px;
+  border: none;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.search {
+  color: #111111;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  height: 30px;
+  box-shadow: -3px -1px 20px 0px #9ac4ff;
+  animation-name: flow;
+  animation-duration: 1s;
+}
+
+@keyframes flow {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+/* View Page */
+
+.view {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 80vw;
+  height: 80vh;
+  font-family: "Nunito", sans-serif;
+  box-shadow: -1px -1px 20px 0px #4029f2;
+  transform: translate(12vw, 10vh);
+}
+
+.viewDiv1 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.viewDiv2 {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.viewDiv2 .index {
+  font-family: 'Ubuntu', sans-serif; 
+  width: 30%;
+  height: 100%;
+  font-size: 20px;
+  border: 1px;
+  border-color: #4b38db;
+  border-style: solid solid solid none;
+}
+
+.index div {
+  padding: 10px;
+}
+
+
+.index div:hover {
+  background: #a7b4f9;
+  /* border-radius: 10px; */
+}
+
+.viewDiv2 .pages {
+  width: 70%;
+  height: 100%;
+  border: 1px;
+  right: 20px;
+  padding-left: 10px;
+  color: #00000091;
+  font-family: 'Tilt Neon', sans-serif;
+  border-color: #4b38db;
+  border-style: solid none solid solid;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+.downloadViewIng {
+  position: absolute;
+  right: 20px;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: #7353b1;
+  margin: 10px;
+}
+
+.downloadViewIng:hover {
+  color: #b30000;
+}
+
+
+.page3,
+.page2 {
+  display: none;
+}
+
+.viewDiv3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 10%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.viewDiv3 button {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  background: #4029f2;
+}
+
+.viewDiv3 button:hover {
+  background: #1600bd;
+}
+
+/* searchView */
+
+.searchView {
+  display: none;
+  position: absolute;
+  background: #c5f6ff;
+  border-radius: 10px;
+  width: 80vw;
+  height: 80vh;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  box-shadow: -1px -1px 20px 0px #4029f2;
+  transform: translate(10vw, 10vh);
+}
+
+.searchViewDiv1 {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.searchViewDiv2 {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.searchRecipe {
+  width: 100%;
+  height: 10%;
+  color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.searchRecipe i {
+  font-size: 25px;
+}
+
+.searchClose {
+  width: 2rem;
+  height: 2rem;
+  background: #ff0000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.searchRecipeInp {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 400px;
+  height: 40px;
+  box-shadow: -3px -1px 20px 0px #9ac4ff;
+  animation-name: flow2;
+  animation-duration: 1s;
+}
+
+@keyframes flow2 {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+.searchRecipeCon {
+  width: 90%;
+  height: 900px;
+  background: #7353b1;
+  border-radius: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.recipeCard {
+  width: 90%;
+  height: 20%;
+  background: #9ac4ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.recipeCardName {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.actionRecipeCardCon {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recipeCardAddBtn {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #4b38db;
+  color: #ffffff;
+}
+
+.recipeCardAddBtn:hover , .recipeCardRemoveBtn:hover {
+  box-shadow: -1px -1px 20px 0px #4029f2;
+  cursor: pointer;
+}
+
+.recipeCardRemoveBtn {
+  display: none;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #4b38db;
+  color: #ffffff;
+}
+
+.recipeCardHas {
+  display: none;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #00be72;
+}
+
+
+/* Scrollbar settings */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff3030;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

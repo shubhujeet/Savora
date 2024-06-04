@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savora-Shorts</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/icons/Savora2.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./shorts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sub1">
+        <a href="../profile/profile.html" class="profile" id="profile">
+          <div class="btn" id="profileElement">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+        </a>
+        <a href="../dash/dash.html">
+          <div class="btn"><i class="ri-dashboard-3-fill"></i></div>
+        </a>
+
+        <a href="../Home/home.html">
+          <div class="btn"><i class="fa-solid fa-house-chimney"></i></div>
+        </a>
+        <a href="#">
+          <div class="btn"><i class="fa-regular fa-circle-play"></i></div>
+        </a>
+        <!-- <a href="../classroom/classroom.html">
+          <div class="btn"><i class="fa-solid fa-users-rectangle"></i></div>
+        </a> -->
+        <a href="../myChannel/myChannel.html" class="upload" id="upload">
+          <div class="btn"><i class="fa-brands fa-playstation"></i></div>
+        </a>
+        <a href="../myPlan/myPlan.html" class="myPlan" id="myPlan">
+          <div class="btn"><i class="fa-brands fa-product-hunt"></i></div>
+        </a>
+
+        <a href="../login/login.html" class="login" id="login">
+          <div class="btn"><i class="ri-login-circle-fill"></i></div>
+        </a>
+
+        <a href="#" class="logout" id="logout">
+          <div class="btn"><i class="ri-logout-circle-fill"></i></div>
+        </a>
+      </div>
+
+      <div class="sub2">
+        <div class="con1">
+          <div class="con1sub1">
+            <div class="searchDiv">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="searchBar" placeholder="Search Food" />
+            </div>
+            <button class="addFilterBtn">
+              <i class="ri-sound-module-line"></i>Add filter
+            </button>
+          </div>
+
+          <div class="filterBar">
+            <div class="filter" data-filter-container></div>
+            <div class="clearFilter">
+              <i class="fa-solid fa-filter-circle-xmark"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="con2Con">
+          <div class="con2"></div>
+          <div class="con3">
+            <div class="openVideoOpt"><i class="fa-solid fa-xmark"></i></div>
+
+            <div class="openVideoCon">
+              <video
+                class="openVideoTag"
+                src="../../assets/videos/Broccoli.mp4"
+                controls
+              ></video>
+              <div class="openVideoContent">
+                <h2 id="openVideoName">Name</h2>
+                <p id="openVideoContributor">Contributor</p>
+                <br />
+                
+                <p id="opneVideoIng">
+                  <b>TimeStamp:</b>
+                  <span
+                  id="openVideoTimestamp"
+                  class="openVideoTimestamp"
+                  ></span>
+                  <br>
+                  <br>
+                  <b>Ingredients:</b>
+                  <span
+                    id="openVideoIngContent"
+                    class="openVideoIngContent"
+                  ></span>
+                  <br />
+                  <br />
+                  <b>Steps:</b>
+                  <span
+                    id="openVideoStepsContent"
+                    class="openVideoStepsContent"
+                  ></span>
+                </p>
+                <div class="commentAction">
+                  <textarea name="comment" id="commentInp"></textarea>
+                  <div class="putComment">Comment</div>
+                </div>
+                <div class="commentL"></div>
+                Comments
+              </div>
+              <div class="commentCon"></div>
+
+              <template data-comment-template>
+                <div class="commentTextCon">
+                  <div class="aboutComment">
+                    <b id="commentor" class="commentor"></b>
+                    <p id="commentText" class="commentText"></p>
+                  </div>
+                  <!-- <div class="commentSentiment">Positive</div> -->
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+
+        <template data-video-template>
+          <div class="videoCon">
+            <div class="videoContent">
+              <video class="videoTag" id="videoTag" alt="" controls></video>
+            </div>
+
+            <div class="content">
+              <div class="imageCon">
+                <i class="fa-solid fa-circle-user"></i>
+                <div class="recipeName">Name</div>
+                <div class="optionbg">
+                  <i class="ri-more-2-fill" class="option"></i>
+                </div>
+                <div class="optionCon">
+                  <div class="optionMyplan">
+                    <i class="ri-play-list-add-line"></i>
+                    <div class="myPlannm" id="week1">week1</div>
+                  </div>
+
+                  <div class="optionMyplan">
+                    <i class="ri-play-list-add-line"></i>
+                    <div class="myPlannm" id="week2">week2</div>
+                  </div>
+
+                  <div class="optionMyplan">
+                    <i class="ri-play-list-add-line"></i>
+                    <div class="myPlannm" id="week3">week3</div>
+                  </div>
+
+                  <div class="optionMyplan">
+                    <i class="ri-play-list-add-line"></i>
+                    <div class="myPlannm" id="week4">week4</div>
+                  </div>
+
+                  <!-- <div class="optionMyplan">
+                      <i class="ri-play-list-add-line"></i>
+                      <div class="myPlannm" id="customList">customlist</div>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="optionsList" data-options-list>
+              <div class="listName" data-listName></div>
+              <div class="listValue"></div>
+            </div>
+
+            <template data-options-template>
+              <div class="optionsBtn"></div>
+            </template>
+          </div>
+        </template>
+
+        <template data-filter-template>
+          <div class="filterBtn"></div>
+        </template>
+      </div>
+    </div>
+
+    <script type="module" src="./shorts.js"></script>
+  </body>
+</html>

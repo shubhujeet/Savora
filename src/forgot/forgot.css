@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap');
+/* font-family: 'Varela', sans-serif;
+font-family: 'Varela Round', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/* font-family: 'Tilt Neon', sans-serif;
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Tilt+Neon&display=swap');
+/* font-family: 'Nova Round', sans-serif;
+  */
+
+
+:root {
+    --mainCol1: #1626d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+h2{
+    font-family: "Nova Round";
+}
+
+
+.forgotForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputField {
+    margin-top: 30px;
+    border: none;
+    font-size: large;
+    background: #fff;
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    padding-block: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px #969696;
+}
+
+.inputBtn{
+    width: 50%;
+    height: inherit;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    margin-top: 5px;
+    background: var(--mainCol1);
+    box-shadow: 5px 5px 10px 1px #969696;
+    font-size: large;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.backCon {
+    display: flex;
+    justify-content: center;
+}
+
+.backCon a{
+    font-family: "Tilt Neon";
+}
+
+@media screen and (min-width: 600px) {
+
+    .forgotCon{
+        border-radius: 4px;
+        padding: 30px;
+        box-shadow: 1px 1px 10px 1px #00000066;
+    }
+
+}

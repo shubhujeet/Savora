@@ -1,0 +1,309 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&family=Salsa&family=Signika:wght@600&family=Tilt+Neon&display=swap");
+/* 
+font-family: 'Nova Round', system-ui;
+font-family: 'Salsa', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+/* 
+font-family: 'Play', sans-serif;
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/* 
+font-family: 'Ubuntu', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@300&family=Open+Sans&display=swap");
+/* 
+font-family: 'Nunito', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sub1 {
+  width: 7vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+.sub2 {
+  width: calc(100vw - 7vw);
+  height: 100%;
+  background: #c5f6ff;
+  border-radius: 20px;
+  padding-left: 40px;
+  /* overflow: scroll;
+    overflow-x: hidden; */
+}
+
+.sub1 a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  border-radius: 30pc;
+  background: #fc2125;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 8px 0px #627986;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: #e7090c;
+  font-size: 22px;
+}
+
+
+.profile,
+.upload,
+.login,
+.myplan {
+  display: none;
+}
+
+
+
+.logout {
+  display: none;
+  margin-top: 50px;
+}
+
+/* View */
+
+.view {
+  display: block;
+  position: absolute;
+  background: #c5f6ff;
+  border-radius: 10px;
+  width: 80vw;
+  height: 80vh;
+  font-family: "Nunito", sans-serif;
+  box-shadow: -1px -1px 20px 0px #4029f2;
+  transform: translate(2vw, 10vh);
+}
+
+.viewDiv1 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.viewDiv2 {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.viewDiv2 .index {
+  width: 30%;
+  height: 100%;
+  font-size: 20px;
+  border: 1px;
+  border-color: #4b38db;
+  border-style: solid solid solid none;
+}
+
+.index div {
+  padding: 10px;
+}
+
+.index div:hover {
+  background: #a7b4f9;
+  /* border-radius: 10px; */
+}
+
+.viewDiv2 .pages {
+  width: 70%;
+  height: 100%;
+  border: 1px;
+  right: 20px;
+  padding-left: 10px;
+  border-color: #4b38db;
+  border-style: solid none solid solid;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+.downloadViewIng {
+  position: absolute;
+  right: 20px;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: #7353b1;
+  margin: 10px;
+}
+
+.downloadViewIng:hover {
+  color: #b30000;
+}
+
+.page3,
+.page2 {
+  display: none;
+}
+
+.viewDiv3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 10%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.viewDiv3 button {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  background: #4029f2;
+}
+
+.viewDiv3 button:hover {
+  background: #1600bd;
+}
+
+.personalForm,
+.dietaryForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 60px;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Salsa", cursive;
+}
+
+.profileImgUserCon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  /* background: #f4f418; */
+}
+
+.profileImgUser {
+  width: 140px;
+  height: 140px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #1600bd;
+  box-shadow: -1px 0px 8px 0px #627986;
+}
+
+.addIcon {
+  position: absolute;
+  font-size: 40px;
+  /* background-color: #f4f418; */
+  color: #ff0000;
+  bottom: 4px;
+  right: 4px;
+}
+
+.addIcon i {
+  background: #f4f418;
+  border-radius: 50%;
+  box-shadow: -1px 0px 20px 0px #ebf7fe;
+}
+
+.addIcon i:hover {
+  transform: scale(1.1);
+}
+
+.userNameCon,
+.allergiesCon,
+.foodRestrictionCon {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+
+.form_control {
+  font-family: "Ubuntu", sans-serif;
+  width: 300px;
+  height: 28px;
+  border-radius: 10px;
+  border: 1px solid #1600bd;
+  padding: 10px;
+}
+ 
+
+.saveBtn {
+  width: 100px;
+  height: 28px;
+  background: #4b38db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Scrollbar settings */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff3030;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

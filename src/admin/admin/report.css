@@ -1,0 +1,280 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&family=Salsa&family=Signika:wght@600&family=Tilt+Neon&display=swap");
+/* 
+font-family: 'Nova Round', system-ui;
+font-family: 'Salsa', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+/* 
+font-family: 'Play', sans-serif;
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/* 
+font-family: 'Ubuntu', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@300&family=Open+Sans&display=swap");
+/* 
+font-family: 'Nunito', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sub1 {
+  width: 7vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+.sub2 {
+  width: calc(100vw - 7vw);
+  height: 100%;
+  background: #c5f6ff;
+  border-radius: 20px;
+  padding-left: 40px;
+  /* overflow: scroll;
+    overflow-x: hidden; */
+}
+
+.sub1 a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  border-radius: 30pc;
+  background: #fc2125;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 8px 0px #627986;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: #e7090c;
+  font-size: 22px;
+}
+
+.profile,
+.upload,
+.login,
+.myplan {
+  display: none;
+}
+
+.logout {
+  display: none;
+  margin-top: 50px;
+}
+
+.divTitle {
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 1px solid #111111;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 30px;
+  margin: 20px;
+}
+
+.sub2 .divTitle {
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 1px solid #111111;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 30px;
+  margin: 20px;
+}
+
+.sub2Con2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countInReport {
+  /* background: #627986; */
+  width: 97%;
+  height: auto;
+  /* height: 100px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.totalRecipesCount,
+.totalUsersCount,
+.totalContributorCount {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #6fbce9;
+  margin: 10px;
+  margin-inline: 20px;
+}
+
+.totalRecipesCount:hover,
+.totalUsersCount:hover,
+.totalContributorCount:hover {
+  transform: scale(1.06);
+}
+
+.countNo {
+  font-size: 15px;
+  font-family: "Play", sans-serif;
+}
+
+.totalRecipes,
+.totalUsers,
+.totalContributor {
+  font-size: 35px;
+  font-family: "Play", sans-serif;
+}
+
+.uploadListCon {
+  background: #c5f6ff;
+  border-radius: 10px;
+  width: 99%;
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* box-shadow: -1px 0px 8px 0px #1554ba; */
+}
+
+.myUploadedVideoCon {
+  font-family: "Signika", sans-serif;
+  font-size: 20px;
+  background: #ffffff;
+  width: 100%;
+  height: 50%;
+  overflow: scroll;
+  margin-block: 1rem;
+  margin-right: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.searchDiv {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.searchBar {
+  width: 400px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+  box-shadow: -1px 0px 8px 0px #b7ddf5;
+}
+
+
+.myUploadTitle {
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px #747bfd solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myUploadedFileNameCon {
+  font-size: 18px;
+  font-family: "Tilt Neon", sans-serif;
+  margin-block: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myUploadedFileNameCon:hover {
+  background: #093e77;
+  color: #ffffff;
+}
+
+.myUploadDelete {
+  /* background:#ff0000; */
+  /* color: #ffffff; */
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.myUploadDelete:hover {
+  color: #ffffff;
+  transform: scale(1.7);
+}
+
+/* Scrollbar settings */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff3030;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
