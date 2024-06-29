@@ -23,4 +23,4 @@ Search on MyPlan
 ![update-sch](https://github.com/shubhujeet/Savora/assets/92719242/f8f071de-1198-48b9-aa40-3c36a77e81db)
 Update on MyPlan
 
-I will update the file soon
+
